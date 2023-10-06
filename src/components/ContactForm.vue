@@ -57,7 +57,10 @@
         </div>
 
         <div class="form-group">
-            <button class="btn btn-primary">Lưu</button>
+            <button class="btn btn-primary">
+                Lưu
+            </button>
+            <!---->
             <button
                 v-if="contactLocal._id"
                 type="button"
@@ -104,7 +107,7 @@ export default {
                 ),
         });
         return {
-            // Chúng ta sẽ không muốn hiệu chinht props, vì vậy ta tạo biến cục bộ
+            // Chúng ta sẽ không muốn hiệu chỉnh props, vì vậy ta tạo biến cục bộ
             // contactLocal để liên kết với các input trên form
             contactLocal: this.contact,
             contactFormSchema,
